@@ -48,7 +48,7 @@
         </dependency>
 
         <!-- <dependency>
-            <groupId>org.projectlombok</groupId>
+            <groupId>org.projectlombok</groupId>nr
             <artifactId>lombok</artifactId>
             <scope>annotationProcessor</scope>
         </dependency> -->
