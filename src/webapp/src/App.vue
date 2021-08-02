@@ -35,7 +35,8 @@ export default {
         }
     },
     created() {
-        this.verifyBd();
+        //this.verifyBd();
+         this.$store.dispatch('listFromApi');
     },
 
     methods: {

@@ -11,7 +11,7 @@ public class MealRepositoryTests {
     @Autowired //gerenciar o objeto de meal -> injetar uma instancia do objeto
     private MealRepository mealRepository;
 
-    @Test
+    //@Test
     public void create(){   
         
         Meal meal1 = new Meal(null, "1", "Miojo", "Pasta", "No instructions", "No urlThumb");
