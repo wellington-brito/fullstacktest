@@ -35,8 +35,7 @@ export default {
         }
     },
     created() {
-        //this.verifyBd();
-         this.$store.dispatch('listFromApi');
+        this.verifyBd();
     },
 
     methods: {
@@ -50,8 +49,7 @@ export default {
                   this.$store.dispatch('listFromBackEnd', 0) ;
                   this.showPaginate = true;
                 } else {
-                  this.$store.dispatch('listFromApi');
-                  
+                  this.$store.dispatch('listFromApi');                  
                 }
             });
         }

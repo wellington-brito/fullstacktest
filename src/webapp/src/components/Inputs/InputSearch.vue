@@ -44,14 +44,23 @@ export default {
     ...mapMutations(["filterMeal"]),
     ...mapActions(["listFromApi"]),
     ...mapActions(["listFromBackEnd"]),
+    
     mealsDbApi(){
       this.$store.dispatch('listFromApi');
     },
     mealsDb(){
-      this.$store.dispatch('listFromBackEnd', 0);
-      // this.listFromBackEnd(0).then( async resp => {
-      //   console.log(await resp);
-      // });      
+      //this.$store.dispatch('listFromBackEnd', 0);
+       this.listFromBackEnd(0).then( async resp => {         
+        let respData = await resp;
+				console.log(resp.data);
+        if(!resp.data)
+				Swal.fire({
+					title: respData.status == "Status code: "+respData.status,								
+					text: respData.data,
+					icon: respData.status == 200 ? 'success' : error,								
+					confirmButtonText: 'OK'
+				});		
+       });      
     }
   },
 }

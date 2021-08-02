@@ -60,29 +60,26 @@ export default {
 
 methods: {
 	    ...mapActions(["save"]),
-	showInstructions(instructions){
-		Swal.fire({
-			title: 'Instructions',
-			text: instructions,				
-			confirmButtonText: 'VOLTAR'
-		});
-	},
-	saveDB(meal){
-		
-		this.save(meal).then( async resp => {
-			let respData = await resp;
+		showInstructions(instructions){
 			Swal.fire({
-			title: respData.status == 200 ? 'Saved' : 'Erro on save. Try again',								
-			text: respData.data.strMeal+" has saved with succes on backend.",
-			icon: respData.status == 200 ? 'success' : error,								
-			confirmButtonText: 'VOLTAR'
-		});
-			
-		
-		});
-		
+				title: 'Instructions',
+				text: instructions,				
+				confirmButtonText: 'VOLTAR'
+			});
+		},
+		saveDB(meal){			
+			this.save(meal).then( async resp => {
+				let respData = await resp;
+				console.log(resp.data);
+				Swal.fire({
+					title: respData.status == 200 ? 'Saved' : 'Erro on save. Try again',								
+					text: respData.data.strMeal+" has saved with succes on backend.",
+					icon: respData.status == 200 ? 'success' : error,								
+					confirmButtonText: 'BACK'
+				});		
+			});		
+		}
 	}
-}
 }
 </script>
 
