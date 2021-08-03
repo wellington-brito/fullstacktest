@@ -1,6 +1,7 @@
 ### This application has developed with technologies below:
->>back-end builded with java/springbot: jpa, spring web, dev tools and etc;
->>front-end builded with Vuejs/Vuex State Management Control, Bootstrap 5, TaillwindCss and Sweetalert2;
+>back-end builded with java/springbot: jpa, spring web, dev tools and etc;
+>
+>front-end builded with Vuejs/Vuex State Management Control, Bootstrap 5, TaillwindCss and Sweetalert2;
 
 ### It is an application to list data from "TheMealDbApi" and save meals that user clicked on blue button "SAVE"
 >In the first load the application, it will connect to The MealDb Api and list all items. This first interaction NOT save on database yet.
