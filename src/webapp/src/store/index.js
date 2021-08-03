@@ -89,6 +89,7 @@ export default new Vuex.Store({
                 })
                 .catch(function(error) {
                     console.log(error);
+                    return error;
                 });
         },
         incrementPage({ commit }, value) {

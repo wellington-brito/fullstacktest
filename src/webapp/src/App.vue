@@ -1,13 +1,19 @@
 <template>
-<div id="app">
-    <span class="text-3xl text-yellow-500">The Meal Of Day</span>
-    <InputSearch />
-    <MealCard />
-    <div v-if="showPaginate">
-        <ButtonsPaginate />
+<div>
+    <div class="absolute top-0 left-0 w-full h-2 flex">
+         <div class="h-2 bg-yellow-500 flex-1"></div>
+    </div>   
+    <div id="app" class="container">        
+        <span class="text-3xl text-yellow-500">The Meal Of Day</span>
+        <InputSearch />
+        <MealCard />
+        <div v-if="showPaginate">
+            <ButtonsPaginate />
+        </div>
+        <!-- <Footer /> -->
     </div>
-    <Footer />
 </div>
+
 </template>
 
 <script>
