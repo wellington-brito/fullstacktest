@@ -59,7 +59,7 @@ export default new Vuex.Store({
                 page = page :
                 page = 0;
 
-            return axios.get('https://themealpfday.herokuapp.com/meals/page', { params: { page: page } }, { headers: headers })
+            return axios.get('https://themealofday.herokuapp.com/meals/page', { params: { page: page } }, { headers: headers })
                 .then(function(response) {
                     //commit('list', response.data);
                     if (response.data.length > 0) {
@@ -82,7 +82,7 @@ export default new Vuex.Store({
                 strInstructions: meal.strInstructions,
                 strMealThumb: meal.strMealThumb
             }
-            return axios.post('https://themealpfday.herokuapp.com/meals', mealToSave, { headers: headers })
+            return axios.post('https://themealofday.herokuapp.com/meals', mealToSave, { headers: headers })
                 .then(function(response) {
                     commit('save', true);
                     return response;
@@ -115,7 +115,7 @@ export default new Vuex.Store({
             }
         },
         stats() {
-            return axios.get('https://themealpfday.herokuapp.com/meals/total', { headers: headers })
+            return axios.get('https://themealofday.herokuapp.com/meals/total', { headers: headers })
                 .then(function(response) {
                     return response.data;
                 })

@@ -7,7 +7,7 @@
                 class="text-gray-500 w-full pl-3 pr-10 py-2 border-2 border-gray-200 rounded-xl hover:border-gray-300 focus:outline-none focus:border-yellow-500 transition-colors" placeholder="Search...">        
             </div>         
             <div class="mt-3">      
-              <button @click="mealsDbApi()" class="flex-no-shrink bg-yellow-400 hover:bg-yellow-500 px-5 ml-4 py-2 text-xs shadow-sm hover:shadow-lg font-medium tracking-wider  hover:border-yellow-400 text-white rounded-full transition ease-in duration-300">TheMealsDbApi</button>
+              <button @click="mealsDbApi()" class="flex-no-shrink bg-yellow-400 hover:bg-yellow-500 mb-3 px-5 ml-4 py-2 text-xs shadow-sm hover:shadow-lg font-medium tracking-wider  hover:border-yellow-400 text-white rounded-full transition ease-in duration-300">TheMealsDbApi</button>
               <button @click="mealsDb()" class="flex-no-shrink bg-gradient-to-r bg-blue-400 from-blue-400 to-blue-700 hover:from-pink-500 hover:to-yellow-500 px-5 ml-4 py-2 text-xs shadow-sm hover:shadow-lg font-medium tracking-wider  hover:border-yellow-500 text-white rounded-full transition ease-in duration-300">SavedMeals</button>        
             </div>
          </div>       
