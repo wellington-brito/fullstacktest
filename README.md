@@ -24,6 +24,6 @@
 >
 >This aplication has hosted on [themealofday.Heroku](https://themealofday.herokuapp.com) using postgresql;
 >
-![alt text](https://drive.google.com/file/d/1-utbrQlCE-jNX9-wDpsbdl--SzuvAxUI/view?usp=sharing)
+![alt text](prints/img1.png)
 >
-![alt text](https://drive.google.com/file/d/1-utbrQlCE-jNX9-wDpsbdl--SzuvAxUI/view?usp=sharing)
+![alt text](prints/img2.png)
