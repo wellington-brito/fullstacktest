@@ -22,7 +22,7 @@
 ### About Deploy
 >For deploy, I have changed the aplication properties and dabase driver to integrate postgresql's Heroku;
 >
->This aplication has hosted on [themealofday.Heroku](https://themealofday.herokuapp.com) using postgresql;
+
 >
 ![alt text](prints/img1.png)
 >
